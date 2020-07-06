@@ -1,0 +1,80 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+  <img
+    width="40"
+    alt="Academy Logo"
+    src="../assets/logo.png"
+  />
+
+<nav class="nav">
+<!-- Toolbar elements -->
+
+  <ul class= "list">
+    <li><a href="#">READING</a></li>
+    <li><a href="#">WRITING</a></li>
+    <li><a href="#">ARITHMETIC</a></li>
+    <li id= "cta"><a href="#">START FREE TRIAL</a></li>
+    <li id= "second-cta"><a href="#">LOGIN</a></li>
+  </ul>
+</nav>
+</div>
+
+  <!-- Main Cards -->
+
+  <div class= "main">
+
+    <h1>I love SCHOOL</h1>
+
+  <div class="card-container">
+    <div class = "card">
+      <img src="../assets/lab.png" alt="Lab">
+      <h2>Chemistry</h2>
+      <p>What if this said something smart. Not just smart, brilliant. Something scholarly, collegiate, academically rigorous and compelling, imagine the smartest words you have ever seen.</p>
+    </div>
+
+    <div class="card">
+      <img src="../assets/pencil.png" alt="Pencil">
+      <h2>Maths</h2>
+      <p>What if this said something smart. Not just smart, brilliant. Something scholarly, collegiate, academically rigorous and compelling, imagine the smartest words you have ever seen.</p>
+    </div>
+
+    <div class="card">
+      <img src="../assets/micro.png" alt="Micro">
+      <h2>Biology</h2>
+      <p>What if this said something smart. Not just smart, brilliant. Something scholarly, collegiate, academically rigorous and compelling, imagine the smartest words you have ever seen.</p>
+    </div>
+  </div>
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * Populating the CARD using FOR and IF * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<div class="card-container">
+  <div class = "card" *ngFor="let card of cards">
+    <img src={{card.img}}>
+    <h2>{{card.title}}</h2>
+    <p>{{card.text}}</p>
+  </div>
+</div>
+</div>
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+
+
+<router-outlet></router-outlet>
